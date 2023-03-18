@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Frontend Mentor | Interactive card details form</title>
+</head>
+
+<body>
+
+  <section>
+    <div class="main-img">
+    </div>
+    <div class="container">
+      <div class="content">
+        <!-- images  -->
+        <div class="images">
+          <div class="img-one">
+            <img src="./images/bg-card-front.png">
+            <div class="text-one">
+              <p class="number-value">0000 0000 0000 0000</p>
+              <div>
+                <span class="name-value">Jane Appleseed</span>
+                <span> <span class="mm-value">00</span> / <span class="yy-value">00</span></span>
+              </div>
+            </div>
+          </div>
+          <div class="img-two">
+            <img src="./images/bg-card-back.png">
+            <span class="cvc-value">000</span>
+          </div>
+        </div>
+
+        <!-- Text  -->
+
+        <form>
+          <label>Cardholder Name</label>
+          <input type="text" placeholder="e.g. Jane Appleseed" class="name">
+          <p class="name-error"></p>
+          <label>Card Number</label>
+          <input type="number" placeholder="e.g. 1234 5678 9123 0000" class="number" maxlength="16">
+          <p class="number-error"></p>
+          <div>
+            <div>
+              <label>Exp. Date (MM/YY)</label>
+              <label class="spacial">CVC</label>
+            </div>
+            <div>
+              <input type="text" placeholder="MM" maxlength="2">
+              <input type="text" placeholder="YY" maxlength="2">
+              <input type="text" placeholder="e.g. 123" maxlength="3">
+              <p class="expiration-error"></p>
+            </div>
+          </div>
+          <button>Confirm</button>
+        </form>
+
+        <!-- Completed state start -->
+        <div id="thanks">
+          <img src="./images/icon-complete.svg">
+          <h2>Thank you!</h2>
+          <p>We've added your card details</p>
+          <button id="reload">Continue</button>
+        </div>
+      </div>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://www.linkedin.com/in/the-mustafa-khaled/" target="_blank">Mustafa Khaled</a>.
+      </div>
+    </div>
+  </section>
+  <script src="./js/app.js"></script>
+</body>
+
+</html>
